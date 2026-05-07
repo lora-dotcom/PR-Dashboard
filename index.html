@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<!-- saved from url=(0060)file:///C:/Users/28025/Downloads/aecooly-pr-dashboard_9.html -->
-<html lang="zh"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Aecooly · PR Dashboard 2026</title>
-<link href="./Aecooly · PR Dashboard 2026_files/css2" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root {
     --bg:#f5f3ee; --surface:#ffffff; --surface2:#faf9f6;
@@ -245,8 +245,8 @@
 <header class="topbar">
   <div class="topbar-brand"><strong>Aecooly</strong> &nbsp;·&nbsp; PR Dashboard 2026</div>
   <div class="topbar-tabs">
-    <button class="tab-btn active" onclick="switchRegion(&#39;global&#39;)">🌍 全球市场</button>
-    <button class="tab-btn" onclick="switchRegion(&#39;japan&#39;)">🇯🇵 日本市场</button>
+    <button class="tab-btn active" onclick="switchRegion('global')">🌍 全球市场</button>
+    <button class="tab-btn" onclick="switchRegion('japan')">🇯🇵 日本市场</button>
   </div>
   <div class="topbar-actions" id="editActions">
     <button class="btn btn-save" onclick="saveLocal()">💾 保存<span class="unsaved-dot" id="unsaved-dot"></span></button>
@@ -266,10 +266,10 @@
   <span class="toolbar-sep">·</span>
   <span>选中标签后改颜色：</span>
   <div class="color-swatch-row">
-    <div class="cswatch" style="background:#e8f0eb;border-color:#b8d8c0" title="绿色" onclick="applyTagColor(&#39;green&#39;)"></div>
-    <div class="cswatch" style="background:#fdf3e0;border-color:#e8c875" title="橙色" onclick="applyTagColor(&#39;amber&#39;)"></div>
-    <div class="cswatch" style="background:#e8f0fa;border-color:#a8c4e0" title="蓝色" onclick="applyTagColor(&#39;blue&#39;)"></div>
-    <div class="cswatch" style="background:#f0ede8;border-color:#d0ccc4" title="灰色" onclick="applyTagColor(&#39;gray&#39;)"></div>
+    <div class="cswatch" style="background:#e8f0eb;border-color:#b8d8c0" title="绿色" onclick="applyTagColor('green')"></div>
+    <div class="cswatch" style="background:#fdf3e0;border-color:#e8c875" title="橙色" onclick="applyTagColor('amber')"></div>
+    <div class="cswatch" style="background:#e8f0fa;border-color:#a8c4e0" title="蓝色" onclick="applyTagColor('blue')"></div>
+    <div class="cswatch" style="background:#f0ede8;border-color:#d0ccc4" title="灰色" onclick="applyTagColor('gray')"></div>
   </div>
   <span class="toolbar-sep">·</span>
   <button class="toolbar-btn" onclick="openLinkModal()">🔗 插入链接</button>
@@ -300,11 +300,11 @@
           <span class="tag tag-gray">垂类媒体 × 2</span>
         </div>
         <div class="media-tier-label">千万媒体</div>
-        <div class="media-grid" id="pm01s-tier1"><div class="media-row" data-tier="tier1" data-idx="0"><span class="media-name" contenteditable="true" onblur="appData.global.mediaRows.tier1[0].name=this.textContent">Wirecutter</span><span class="media-uv" contenteditable="true" onblur="appData.global.mediaRows.tier1[0].uv=this.textContent">1,000万+ UV</span><button class="edit-link-btn" onclick="quickLink(&#39;tier1&#39;,0)">+ 链接</button></div><div class="media-row" data-tier="tier1" data-idx="1"><span class="media-name" contenteditable="true" onblur="appData.global.mediaRows.tier1[1].name=this.textContent">WIRED</span><span class="media-uv" contenteditable="true" onblur="appData.global.mediaRows.tier1[1].uv=this.textContent">1,500万+ UV</span><button class="edit-link-btn" onclick="quickLink(&#39;tier1&#39;,1)">+ 链接</button></div></div>
+        <div class="media-grid" id="pm01s-tier1"></div>
         <div class="media-tier-label">百万媒体</div>
-        <div class="media-grid" id="pm01s-tier2"><div class="media-row" data-tier="tier2" data-idx="0"><span class="media-name" contenteditable="true" onblur="appData.global.mediaRows.tier2[0].name=this.textContent">TIME Magazine</span><span class="media-uv" contenteditable="true" onblur="appData.global.mediaRows.tier2[0].uv=this.textContent"></span><button class="edit-link-btn" onclick="quickLink(&#39;tier2&#39;,0)">+ 链接</button></div><div class="media-row" data-tier="tier2" data-idx="1"><span class="media-name" contenteditable="true" onblur="appData.global.mediaRows.tier2[1].name=this.textContent">Prevention</span><span class="media-uv" contenteditable="true" onblur="appData.global.mediaRows.tier2[1].uv=this.textContent"></span><button class="edit-link-btn" onclick="quickLink(&#39;tier2&#39;,1)">+ 链接</button></div><div class="media-row" data-tier="tier2" data-idx="2"><span class="media-name" contenteditable="true" onblur="appData.global.mediaRows.tier2[2].name=this.textContent">SlashGear</span><span class="media-uv" contenteditable="true" onblur="appData.global.mediaRows.tier2[2].uv=this.textContent"></span><button class="edit-link-btn" onclick="quickLink(&#39;tier2&#39;,2)">+ 链接</button></div><div class="media-row" data-tier="tier2" data-idx="3"><span class="media-name" contenteditable="true" onblur="appData.global.mediaRows.tier2[3].name=this.textContent">Numerama</span><span class="media-uv" contenteditable="true" onblur="appData.global.mediaRows.tier2[3].uv=this.textContent"></span><button class="edit-link-btn" onclick="quickLink(&#39;tier2&#39;,3)">+ 链接</button></div><div class="media-row" data-tier="tier2" data-idx="4"><span class="media-name" contenteditable="true" onblur="appData.global.mediaRows.tier2[4].name=this.textContent">Journal du Geek</span><span class="media-uv" contenteditable="true" onblur="appData.global.mediaRows.tier2[4].uv=this.textContent"></span><button class="edit-link-btn" onclick="quickLink(&#39;tier2&#39;,4)">+ 链接</button></div><div class="media-row" data-tier="tier2" data-idx="5"><span class="media-name" contenteditable="true" onblur="appData.global.mediaRows.tier2[5].name=this.textContent">Everyday Health</span><span class="media-uv" contenteditable="true" onblur="appData.global.mediaRows.tier2[5].uv=this.textContent"></span><button class="edit-link-btn" onclick="quickLink(&#39;tier2&#39;,5)">+ 链接</button></div><div class="media-row" data-tier="tier2" data-idx="6"><span class="media-name" contenteditable="true" onblur="appData.global.mediaRows.tier2[6].name=this.textContent">HardwareZone</span><span class="media-uv" contenteditable="true" onblur="appData.global.mediaRows.tier2[6].uv=this.textContent"></span><button class="edit-link-btn" onclick="quickLink(&#39;tier2&#39;,6)">+ 链接</button></div><div class="media-row" data-tier="tier2" data-idx="7"><span class="media-name" contenteditable="true" onblur="appData.global.mediaRows.tier2[7].name=this.textContent">Yanko Design</span><span class="media-uv" contenteditable="true" onblur="appData.global.mediaRows.tier2[7].uv=this.textContent">已约稿</span><button class="edit-link-btn" onclick="quickLink(&#39;tier2&#39;,7)">+ 链接</button></div></div>
+        <div class="media-grid" id="pm01s-tier2"></div>
         <div class="media-tier-label">垂类媒体</div>
-        <div class="media-grid" id="pm01s-tier3"><div class="media-row" data-tier="tier3" data-idx="0"><span class="media-name" contenteditable="true" onblur="appData.global.mediaRows.tier3[0].name=this.textContent">Techlicious</span><span class="media-uv" contenteditable="true" onblur="appData.global.mediaRows.tier3[0].uv=this.textContent"></span><button class="edit-link-btn" onclick="quickLink(&#39;tier3&#39;,0)">+ 链接</button></div><div class="media-row" data-tier="tier3" data-idx="1"><span class="media-name" contenteditable="true" onblur="appData.global.mediaRows.tier3[1].name=this.textContent">GadgetMatch</span><span class="media-uv" contenteditable="true" onblur="appData.global.mediaRows.tier3[1].uv=this.textContent"></span><button class="edit-link-btn" onclick="quickLink(&#39;tier3&#39;,1)">+ 链接</button></div></div>
+        <div class="media-grid" id="pm01s-tier3"></div>
       </div>
 
       <div style="display:flex;flex-direction:column;gap:16px;">
@@ -348,91 +348,18 @@
     <div class="product-table-wrap">
       <table class="product-table">
         <thead><tr><th>产品</th><th>媒体数</th><th>已发布</th><th>预计曝光</th></tr></thead>
-        <tbody id="g-product-tbody"><tr><td><span class="product-name" contenteditable="true" onblur="appData.global.products[0].name=this.textContent">PM01S</span></td><td><span class="num-big" contenteditable="true" onblur="appData.global.products[0].media=+this.textContent||0">12</span><span class="num-label">家</span></td><td><span class="num-big" contenteditable="true" onblur="appData.global.products[0].published=+this.textContent||0">0</span><span class="num-label">篇</span></td><td><span class="exposure-text" contenteditable="true" onblur="appData.global.products[0].exposure=this.textContent">2,500万+</span></td><td><button class="del-btn" onclick="deleteProductRow(0)">×</button></td></tr><tr><td><span class="product-name" contenteditable="true" onblur="appData.global.products[1].name=this.textContent">PM02</span></td><td><span class="num-big" contenteditable="true" onblur="appData.global.products[1].media=+this.textContent||0">8</span><span class="num-label">家</span></td><td><span class="num-big" contenteditable="true" onblur="appData.global.products[1].published=+this.textContent||0">4</span><span class="num-label">篇</span></td><td><span class="exposure-text" contenteditable="true" onblur="appData.global.products[1].exposure=this.textContent">待统计</span></td><td><button class="del-btn" onclick="deleteProductRow(1)">×</button></td></tr><tr><td><span class="product-name" contenteditable="true" onblur="appData.global.products[2].name=this.textContent">NK01</span></td><td><span class="num-big" contenteditable="true" onblur="appData.global.products[2].media=+this.textContent||0">7</span><span class="num-label">家</span></td><td><span class="num-big" contenteditable="true" onblur="appData.global.products[2].published=+this.textContent||0">10</span><span class="num-label">篇</span></td><td><span class="exposure-text" contenteditable="true" onblur="appData.global.products[2].exposure=this.textContent">待统计</span></td><td><button class="del-btn" onclick="deleteProductRow(2)">×</button></td></tr><tr><td><span class="product-name" contenteditable="true" onblur="appData.global.products[3].name=this.textContent">PK01</span></td><td><span class="num-big" contenteditable="true" onblur="appData.global.products[3].media=+this.textContent||0">5</span><span class="num-label">家</span></td><td><span class="num-big" contenteditable="true" onblur="appData.global.products[3].published=+this.textContent||0">2</span><span class="num-label">篇</span></td><td><span class="exposure-text" contenteditable="true" onblur="appData.global.products[3].exposure=this.textContent">待统计</span></td><td><button class="del-btn" onclick="deleteProductRow(3)">×</button></td></tr><tr><td><span class="product-name" contenteditable="true" onblur="appData.global.products[4].name=this.textContent">PF04</span></td><td><span class="num-big" contenteditable="true" onblur="appData.global.products[4].media=+this.textContent||0">5</span><span class="num-label">家</span></td><td><span class="num-big" contenteditable="true" onblur="appData.global.products[4].published=+this.textContent||0">6</span><span class="num-label">篇</span></td><td><span class="exposure-text" contenteditable="true" onblur="appData.global.products[4].exposure=this.textContent">待统计</span></td><td><button class="del-btn" onclick="deleteProductRow(4)">×</button></td></tr></tbody>
+        <tbody id="g-product-tbody"></tbody>
       </table>
       <button class="add-row-btn" onclick="addProductRow()">+ 新增产品行</button>
     </div>
 
     <div class="section-label">指南内容追踪</div>
-    <div class="guide-summary-bar" id="g-guide-summary">
-    <div class="gsb-cell"><div class="gsb-num">11</div><div class="gsb-label">媒体总数</div></div>
-    <div class="gsb-cell"><div class="gsb-num">6</div><div class="gsb-label">已发布</div></div>
-    <div class="gsb-cell"><div class="gsb-num">5</div><div class="gsb-label">待发布</div></div>
-    <div class="gsb-cell"><div class="gsb-num" style="font-size:18px;color:var(--text-tertiary)">待补充</div><div class="gsb-label">总曝光预估</div></div></div>
-    <div class="guides-grid" id="g-guides-grid"><div class="guide-card"><div class="guide-card-header"><div class="guide-title"><span>🎁</span><span contenteditable="true" onblur="appData.global.guides[0].title=this.textContent">礼物指南</span></div></div>
-    <div class="guide-stats"><div class="guide-stat"><strong>4</strong>已发布</div><div class="guide-stat"><strong>1</strong>待发布</div></div><div class="guide-item" data-gi="0" data-sgi="0" data-ii="0">
-          <div class="guide-item-left"><span class="guide-item-name" contenteditable="true" onblur="appData.global.guides[0].subGroups[0].items[0].name=this.textContent">Yahoo Creators · Joni Sw...</span><button class="inline-link-btn" onclick="inlineLink(0,0,0)">+ 链接</button></div>
-          <div style="display:flex;align-items:center;gap:6px">
-            <span class="tag tag-green" data-status="已发布" data-gi="0" data-sgi="0" data-ii="0">已发布</span>
-            <button class="del-btn" onclick="deleteGuideItem(0,0,0)" title="删除">×</button>
-          </div>
-        </div><div class="guide-item" data-gi="0" data-sgi="0" data-ii="1">
-          <div class="guide-item-left"><span class="guide-item-name" contenteditable="true" onblur="appData.global.guides[0].subGroups[0].items[1].name=this.textContent">Life with Kathy</span><button class="inline-link-btn" onclick="inlineLink(0,0,1)">+ 链接</button></div>
-          <div style="display:flex;align-items:center;gap:6px">
-            <span class="tag tag-green" data-status="已发布" data-gi="0" data-sgi="0" data-ii="1">已发布</span>
-            <button class="del-btn" onclick="deleteGuideItem(0,0,1)" title="删除">×</button>
-          </div>
-        </div><div class="guide-item" data-gi="0" data-sgi="0" data-ii="2">
-          <div class="guide-item-left"><span class="guide-item-name" contenteditable="true" onblur="appData.global.guides[0].subGroups[0].items[2].name=this.textContent">Steph's Cheers &amp; Jeers</span><button class="inline-link-btn" onclick="inlineLink(0,0,2)">+ 链接</button></div>
-          <div style="display:flex;align-items:center;gap:6px">
-            <span class="tag tag-green" data-status="已发布" data-gi="0" data-sgi="0" data-ii="2">已发布</span>
-            <button class="del-btn" onclick="deleteGuideItem(0,0,2)" title="删除">×</button>
-          </div>
-        </div><div class="guide-item" data-gi="0" data-sgi="0" data-ii="3">
-          <div class="guide-item-left"><span class="guide-item-name" contenteditable="true" onblur="appData.global.guides[0].subGroups[0].items[3].name=this.textContent">Best of the Southwest</span><button class="inline-link-btn" onclick="inlineLink(0,0,3)">+ 链接</button></div>
-          <div style="display:flex;align-items:center;gap:6px">
-            <span class="tag tag-green" data-status="已发布" data-gi="0" data-sgi="0" data-ii="3">已发布</span>
-            <button class="del-btn" onclick="deleteGuideItem(0,0,3)" title="删除">×</button>
-          </div>
-        </div><div class="guide-item" data-gi="0" data-sgi="0" data-ii="4">
-          <div class="guide-item-left"><span class="guide-item-name" contenteditable="true" onblur="appData.global.guides[0].subGroups[0].items[4].name=this.textContent">The Maria Liberati Show</span><button class="inline-link-btn" onclick="inlineLink(0,0,4)">+ 链接</button></div>
-          <div style="display:flex;align-items:center;gap:6px">
-            <span class="tag tag-amber" data-status="待发布" data-gi="0" data-sgi="0" data-ii="4">待发布</span>
-            <button class="del-btn" onclick="deleteGuideItem(0,0,4)" title="删除">×</button>
-          </div>
-        </div><button class="add-guide-btn" onclick="addGuideItem(0)">+ 添加</button></div><div class="guide-card"><div class="guide-card-header"><div class="guide-title"><span>☀️</span><span contenteditable="true" onblur="appData.global.guides[1].title=this.textContent">夏季装备专题</span></div></div>
-    <div class="guide-stats"><div class="guide-stat"><strong>1</strong>已发布</div><div class="guide-stat"><strong>2</strong>待发布</div></div><div class="guide-item" data-gi="1" data-sgi="0" data-ii="0">
-          <div class="guide-item-left"><span class="guide-item-name" contenteditable="true" onblur="appData.global.guides[1].subGroups[0].items[0].name=this.textContent">Live Grow Play Austin</span><button class="inline-link-btn" onclick="inlineLink(1,0,0)">+ 链接</button></div>
-          <div style="display:flex;align-items:center;gap:6px">
-            <span class="tag tag-green" data-status="已发布" data-gi="1" data-sgi="0" data-ii="0">已发布</span>
-            <button class="del-btn" onclick="deleteGuideItem(1,0,0)" title="删除">×</button>
-          </div>
-        </div><div class="guide-item" data-gi="1" data-sgi="0" data-ii="1">
-          <div class="guide-item-left"><span class="guide-item-name" contenteditable="true" onblur="appData.global.guides[1].subGroups[0].items[1].name=this.textContent">Wanderous Affair</span><button class="inline-link-btn" onclick="inlineLink(1,0,1)">+ 链接</button></div>
-          <div style="display:flex;align-items:center;gap:6px">
-            <span class="tag tag-amber" data-status="待发布" data-gi="1" data-sgi="0" data-ii="1">待发布</span>
-            <button class="del-btn" onclick="deleteGuideItem(1,0,1)" title="删除">×</button>
-          </div>
-        </div><div class="guide-item" data-gi="1" data-sgi="0" data-ii="2">
-          <div class="guide-item-left"><span class="guide-item-name" contenteditable="true" onblur="appData.global.guides[1].subGroups[0].items[2].name=this.textContent">DNA Magazine AU</span><button class="inline-link-btn" onclick="inlineLink(1,0,2)">+ 链接</button></div>
-          <div style="display:flex;align-items:center;gap:6px">
-            <span class="tag tag-amber" data-status="待发布" data-gi="1" data-sgi="0" data-ii="2">待发布</span>
-            <button class="del-btn" onclick="deleteGuideItem(1,0,2)" title="删除">×</button>
-          </div>
-        </div><button class="add-guide-btn" onclick="addGuideItem(1)">+ 添加</button></div><div class="guide-card"><div class="guide-card-header"><div class="guide-title"><span>📖</span><span contenteditable="true" onblur="appData.global.guides[2].title=this.textContent">常态化指南</span></div></div>
-    <div class="guide-stats"><div class="guide-stat"><strong>1</strong>已发布</div><div class="guide-stat"><strong>2</strong>待发布</div></div><div class="guide-item" data-gi="2" data-sgi="0" data-ii="0">
-          <div class="guide-item-left"><span class="guide-item-name" contenteditable="true" onblur="appData.global.guides[2].subGroups[0].items[0].name=this.textContent">Runaway Traveller</span><button class="inline-link-btn" onclick="inlineLink(2,0,0)">+ 链接</button></div>
-          <div style="display:flex;align-items:center;gap:6px">
-            <span class="tag tag-green" data-status="已发布" data-gi="2" data-sgi="0" data-ii="0">已发布</span>
-            <button class="del-btn" onclick="deleteGuideItem(2,0,0)" title="删除">×</button>
-          </div>
-        </div><div class="guide-item" data-gi="2" data-sgi="0" data-ii="1">
-          <div class="guide-item-left"><span class="guide-item-name" contenteditable="true" onblur="appData.global.guides[2].subGroups[0].items[1].name=this.textContent">Travel + Leisure Asia</span><button class="inline-link-btn" onclick="inlineLink(2,0,1)">+ 链接</button></div>
-          <div style="display:flex;align-items:center;gap:6px">
-            <span class="tag tag-amber" data-status="待发布" data-gi="2" data-sgi="0" data-ii="1">待发布</span>
-            <button class="del-btn" onclick="deleteGuideItem(2,0,1)" title="删除">×</button>
-          </div>
-        </div><div class="guide-item" data-gi="2" data-sgi="0" data-ii="2">
-          <div class="guide-item-left"><span class="guide-item-name" contenteditable="true" onblur="appData.global.guides[2].subGroups[0].items[2].name=this.textContent">She's Got Issues</span><button class="inline-link-btn" onclick="inlineLink(2,0,2)">+ 链接</button></div>
-          <div style="display:flex;align-items:center;gap:6px">
-            <span class="tag tag-amber" data-status="待发布" data-gi="2" data-sgi="0" data-ii="2">待发布</span>
-            <button class="del-btn" onclick="deleteGuideItem(2,0,2)" title="删除">×</button>
-          </div>
-        </div><button class="add-guide-btn" onclick="addGuideItem(2)">+ 添加</button></div></div>
+    <div class="guide-summary-bar" id="g-guide-summary"></div>
+    <div class="guides-grid" id="g-guides-grid"></div>
 
     <div class="section-label">后续规划</div>
     <div class="roadmap-card">
-      <div id="g-roadmap-list"><div class="roadmap-item"><div class="roadmap-time" contenteditable="true" onblur="appData.global.roadmap[0].time=this.textContent">5月中</div><div class="roadmap-content"><div class="roadmap-title" contenteditable="true" onblur="appData.global.roadmap[0].title=this.textContent">世界杯全网首发新闻稿（美通社）</div><div class="roadmap-desc" contenteditable="true" onblur="appData.global.roadmap[0].desc=this.textContent">配合夏季营销节点，体育媒体 Pitching 同步推进</div></div><div style="display:flex;align-items:center;gap:6px;flex-shrink:0"><span class="tag tag-gray" data-status="规划中" data-ri="0">规划中</span><button class="del-btn" onclick="deleteRoadmapItem(0)" title="删除">×</button></div></div><div class="roadmap-item"><div class="roadmap-time" contenteditable="true" onblur="appData.global.roadmap[1].time=this.textContent"></div><div class="roadmap-content"><div class="roadmap-title" contenteditable="true" onblur="appData.global.roadmap[1].title=this.textContent">PM01S 媒体跟进</div><div class="roadmap-desc" contenteditable="true" onblur="appData.global.roadmap[1].desc=this.textContent">配合亚马逊上架节奏，推动 Wirecutter / WIRED 等千万媒体内容发布</div></div><div style="display:flex;align-items:center;gap:6px;flex-shrink:0"><span class="tag tag-amber" data-status="跟进中" data-ri="1">跟进中</span><button class="del-btn" onclick="deleteRoadmapItem(1)" title="删除">×</button></div></div><div class="roadmap-item"><div class="roadmap-time" contenteditable="true" onblur="appData.global.roadmap[2].time=this.textContent"></div><div class="roadmap-content"><div class="roadmap-title" contenteditable="true" onblur="appData.global.roadmap[2].title=this.textContent">体育资源 Pitch 中</div><div class="roadmap-desc" contenteditable="true" onblur="appData.global.roadmap[2].desc=this.textContent">配合世界杯节点营销</div></div><div style="display:flex;align-items:center;gap:6px;flex-shrink:0"><span class="tag tag-amber" data-status="跟进中" data-ri="2">跟进中</span><button class="del-btn" onclick="deleteRoadmapItem(2)" title="删除">×</button></div></div><div class="roadmap-item"><div class="roadmap-time" contenteditable="true" onblur="appData.global.roadmap[3].time=this.textContent"></div><div class="roadmap-content"><div class="roadmap-title" contenteditable="true" onblur="appData.global.roadmap[3].title=this.textContent">媒体资源持续扩充</div><div class="roadmap-desc" contenteditable="true" onblur="appData.global.roadmap[3].desc=this.textContent">以 PM01S 解禁为契机，加速建联更多头部媒体，夏季内容持续释出</div></div><div style="display:flex;align-items:center;gap:6px;flex-shrink:0"><span class="tag tag-blue" data-status="持续" data-ri="3">持续</span><button class="del-btn" onclick="deleteRoadmapItem(3)" title="删除">×</button></div></div></div>
+      <div id="g-roadmap-list"></div>
       <button class="add-roadmap-btn" onclick="addRoadmapItem()">+ 新增规划条目</button>
     </div>
   </div>
@@ -449,7 +376,7 @@
     <div class="prtimes-table-wrap">
       <table class="prtimes-table">
         <thead><tr><th>时间</th><th>新闻稿标题</th><th>主推产品</th><th>状态</th></tr></thead>
-        <tbody id="jp-prtimes-tbody"><tr><td><span class="pr-time" contenteditable="true" onblur="appData.japan.prtimes[0].time=this.textContent">4月 W1</span></td><td><span class="pr-title" contenteditable="true" onblur="appData.japan.prtimes[0].title=this.textContent">Aecooly応援新生活、2026年「パーソナル冷却」新シリーズを発表</span></td><td><span class="pr-product" contenteditable="true" onblur="appData.japan.prtimes[0].product=this.textContent">PE01・TB01・PH系列</span></td><td style="display:flex;align-items:center;gap:6px"><span class="tag tag-green" data-status="已发布" data-pi="0">已发布</span><button class="del-btn" onclick="deletePRItem(0)" title="删除">×</button></td></tr><tr><td><span class="pr-time" contenteditable="true" onblur="appData.japan.prtimes[1].time=this.textContent">4月 W2</span></td><td><span class="pr-title" contenteditable="true" onblur="appData.japan.prtimes[1].title=this.textContent">「iF・Red Dot・TIME選出」Aecooly Aero ハイパフォーマンスハンディファン</span></td><td><span class="pr-product" contenteditable="true" onblur="appData.japan.prtimes[1].product=this.textContent">PH系列</span></td><td style="display:flex;align-items:center;gap:6px"><span class="tag tag-green" data-status="已发布" data-pi="1">已发布</span><button class="del-btn" onclick="deletePRItem(1)" title="删除">×</button></td></tr><tr><td><span class="pr-time" contenteditable="true" onblur="appData.japan.prtimes[2].time=this.textContent">4月 W3</span></td><td><span class="pr-title" contenteditable="true" onblur="appData.japan.prtimes[2].title=this.textContent">GW前に準備したい風の形。Aecooly「Air Gimbal」ハンディターボファンを発売</span></td><td><span class="pr-product" contenteditable="true" onblur="appData.japan.prtimes[2].product=this.textContent">PF04</span></td><td style="display:flex;align-items:center;gap:6px"><span class="tag tag-green" data-status="已发布" data-pi="2">已发布</span><button class="del-btn" onclick="deletePRItem(2)" title="删除">×</button></td></tr><tr><td><span class="pr-time" contenteditable="true" onblur="appData.japan.prtimes[3].time=this.textContent">4月 W4</span></td><td><span class="pr-title" contenteditable="true" onblur="appData.japan.prtimes[3].title=this.textContent">Aecooly、風とミストで織りなす新しい冷却のかたち。Cold Air ミストファンを発売</span></td><td><span class="pr-product" contenteditable="true" onblur="appData.japan.prtimes[3].product=this.textContent">PM02</span></td><td style="display:flex;align-items:center;gap:6px"><span class="tag tag-green" data-status="已发布" data-pi="3">已发布</span><button class="del-btn" onclick="deletePRItem(3)" title="删除">×</button></td></tr><tr><td><span class="pr-time" contenteditable="true" onblur="appData.japan.prtimes[4].time=this.textContent">5月 W1</span></td><td><span class="pr-title" contenteditable="true" onblur="appData.japan.prtimes[4].title=this.textContent">GWの移動を、もっと快適に。Aecooly、3つのパーソナル扇風機をラインナップ</span></td><td><span class="pr-product" contenteditable="true" onblur="appData.japan.prtimes[4].product=this.textContent">PM02・PF04・PF01</span></td><td style="display:flex;align-items:center;gap:6px"><span class="tag tag-green" data-status="已发布" data-pi="4">已发布</span><button class="del-btn" onclick="deletePRItem(4)" title="删除">×</button></td></tr><tr><td><span class="pr-time" contenteditable="true" onblur="appData.japan.prtimes[5].time=this.textContent">5月 W1</span></td><td><span class="pr-title" contenteditable="true" onblur="appData.japan.prtimes[5].title=this.textContent">【母の日ギフト】機能性とデザイン性を兼ね備えた、上質な「涼しさのプレゼント」</span></td><td><span class="pr-product" contenteditable="true" onblur="appData.japan.prtimes[5].product=this.textContent">PF04・PM02</span></td><td style="display:flex;align-items:center;gap:6px"><span class="tag tag-green" data-status="已发布" data-pi="5">已发布</span><button class="del-btn" onclick="deletePRItem(5)" title="删除">×</button></td></tr><tr><td><span class="pr-time" contenteditable="true" onblur="appData.japan.prtimes[6].time=this.textContent">5月 W2</span></td><td><span class="pr-title" contenteditable="true" onblur="appData.japan.prtimes[6].title=this.textContent">【ヨドバシカメラ正式取扱い開始】Aecooly、国内最大級の家電量販店に登場</span></td><td><span class="pr-product" contenteditable="true" onblur="appData.japan.prtimes[6].product=this.textContent">—</span></td><td style="display:flex;align-items:center;gap:6px"><span class="tag tag-amber" data-status="待发布" data-pi="6">待发布</span><button class="del-btn" onclick="deletePRItem(6)" title="删除">×</button></td></tr><tr><td><span class="pr-time" contenteditable="true" onblur="appData.japan.prtimes[7].time=this.textContent">5月 W3</span></td><td><span class="pr-title" contenteditable="true" onblur="appData.japan.prtimes[7].title=this.textContent">バーベキューで手がふさがっても大丈夫。両手が空く、涼しい新習慣</span></td><td><span class="pr-product" contenteditable="true" onblur="appData.japan.prtimes[7].product=this.textContent">NK01・PF04</span></td><td style="display:flex;align-items:center;gap:6px"><span class="tag tag-amber" data-status="待发布" data-pi="7">待发布</span><button class="del-btn" onclick="deletePRItem(7)" title="删除">×</button></td></tr><tr><td><span class="pr-time" contenteditable="true" onblur="appData.japan.prtimes[8].time=this.textContent">5月 W3</span></td><td><span class="pr-title" contenteditable="true" onblur="appData.japan.prtimes[8].title=this.textContent">【新登場】両手フリー＆ミニマル設計の「新感覚ネックファン」が遂に発売！</span></td><td><span class="pr-product" contenteditable="true" onblur="appData.japan.prtimes[8].product=this.textContent">NK01</span></td><td style="display:flex;align-items:center;gap:6px"><span class="tag tag-amber" data-status="待发布" data-pi="8">待发布</span><button class="del-btn" onclick="deletePRItem(8)" title="删除">×</button></td></tr><tr><td><span class="pr-time" contenteditable="true" onblur="appData.japan.prtimes[9].time=this.textContent">5月 W4</span></td><td><span class="pr-title" contenteditable="true" onblur="appData.japan.prtimes[9].title=this.textContent">家族の健康を守る熱中症対策。今夏、揃えておきたい必須冷却グッズ</span></td><td><span class="pr-product" contenteditable="true" onblur="appData.japan.prtimes[9].product=this.textContent">PM02・NK01</span></td><td style="display:flex;align-items:center;gap:6px"><span class="tag tag-amber" data-status="待发布" data-pi="9">待发布</span><button class="del-btn" onclick="deletePRItem(9)" title="删除">×</button></td></tr></tbody>
+        <tbody id="jp-prtimes-tbody"></tbody>
       </table>
     </div>
 
@@ -532,7 +459,7 @@
     <p id="modal-desc">粘贴从其他设备导出的数据码，将覆盖当前看板数据。</p>
     <textarea id="importTextarea" placeholder="粘贴数据码…"></textarea>
     <div class="modal-actions">
-      <button class="btn" onclick="closeModal(&#39;importModal&#39;)">取消</button>
+      <button class="btn" onclick="closeModal('importModal')">取消</button>
       <button class="btn-primary btn" id="modal-confirm-btn" onclick="doImport()">确认导入</button>
     </div>
   </div>
@@ -542,15 +469,15 @@
   <div class="modal">
     <h3>插入链接</h3>
     <p>为当前选中的媒体项目添加跳转链接（留空则清除链接）</p>
-    <input type="text" id="linkInput" placeholder="https://…">
+    <input type="text" id="linkInput" placeholder="https://…" />
     <div class="modal-actions">
-      <button class="btn" onclick="closeModal(&#39;linkModal&#39;)">取消</button>
+      <button class="btn" onclick="closeModal('linkModal')">取消</button>
       <button class="btn-primary btn" onclick="confirmLink()">确认</button>
     </div>
   </div>
 </div>
 
-<div class="toast" id="toast">🔗 分享链接已复制！对方直接浏览器打开即可</div>
+<div class="toast" id="toast"></div>
 
 <script>
 // ════════════════════════════════════════
@@ -920,7 +847,7 @@ function inlineLink(gi,sgi,ii){
 }
 function copyShareLink(){
   const code=btoa(unescape(encodeURIComponent(JSON.stringify(appData))));
-  const url='https://lora-dotcom.github.io/PR-/?readonly=1&data='+encodeURIComponent(code);
+  const url='https://lora-dotcom.github.io/PR-Dashboard/?readonly=1&data='+encodeURIComponent(code);
   navigator.clipboard.writeText(url).then(()=>showToast('🔗 分享链接已复制！对方直接浏览器打开即可')).catch(()=>{
     // fallback: 显示链接让用户手动复制
     document.getElementById('modal-title').textContent='分享链接';
@@ -988,6 +915,5 @@ function init(){
 }
 window.addEventListener('DOMContentLoaded',init);
 </script>
-
-
-</body></html>
+</body>
+</html>
